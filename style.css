@@ -1,0 +1,77 @@
+nav {
+    border: 2px solid green;
+}
+.navLeft {
+    border: 2px solid green;
+}
+.navRight {
+    border: 2px solid green;
+}
+ul {
+    border: 2px solid green;
+}
+li {
+    border: 2px solid green;
+}
+h1 {
+    border: 2px solid green;
+}
+h2 {
+    border: 2px solid green;
+}
+p {
+    border: 2px solid green;
+}
+main {
+    border: 2px solid green;
+}
+section {
+    border: 2px solid green;
+}
+footer {
+    border: 2px solid green;
+}
+form {
+    border: 2px solid green;
+}
+div {
+    border: 2px solid green;
+}
+/* end of the border lines */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.navLeft {
+    display: flex;
+    align-items: center;
+}
+.navRight {
+    width: 80%;
+
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+#duck {
+    display: flex;
+    justify-content: space-between;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3px;
+}
+.grid-item {
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
