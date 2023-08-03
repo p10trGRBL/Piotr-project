@@ -1,47 +1,74 @@
-nav {
-    border: 2px solid green;
+/*UNIVERSAL CSS STYLING RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-.navLeft {
-    border: 2px solid green;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-.navRight {
-    border: 2px solid green;
+body {
+	line-height: 1;
 }
-ul {
-    border: 2px solid green;
+ol, ul {
+	list-style: none;
 }
-li {
-    border: 2px solid green;
+blockquote, q {
+	quotes: none;
 }
-h1 {
-    border: 2px solid green;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
-h2 {
-    border: 2px solid green;
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* END OF FORMAT RESET */
+body {
+    font-family: 'Roboto Slab', serif;
+}
+h1, h2 {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    
 }
 p {
-    border: 2px solid green;
+    text-align: center;
 }
-main {
-    border: 2px solid green;
-}
-section {
-    border: 2px solid green;
-}
-footer {
-    border: 2px solid green;
-}
-form {
-    border: 2px solid green;
-}
-div {
-    border: 2px solid green;
-}
-/* end of the border lines */
 
 nav {
     display: flex;
     justify-content: space-between;
+    background-color: #001219;
+    color: whitesmoke;
+    height: 10vh;
 }
 .navLeft {
     display: flex;
@@ -49,29 +76,150 @@ nav {
 }
 .navRight {
     width: 80%;
+    height: 10vh;
+    align-items: center;
+
+
 
 }
 ul {
+    height: 10vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.navRight ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: #001219;
+}
+.navRight ul li a:hover {
+    color: yellowgreen;
+    cursor: pointer;   
+}
+.navRight ul li a:active {
+    color: aquamarine;
+    cursor: auto;
+}
+
+#home {
+    background-color: #005f73;
+    padding: 30px;
+}
+#home h1 {
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #0a9396;
+}
+#home p {
+    color: whitesmoke;
+    padding: 10px;
 }
 #duck {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a9396;
+    padding: 10px;
+    
 }
+#duck img {
+    width: 200px;
+    height: 200px;
+    padding-top: 10px;
+}
+.text p {
+    color: whitesmoke;
+    padding: 10px;
+}
+
+#emergency {
+    background-color: #94d2bd;
+    padding: 10px;
+}
+
 footer {
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: #ee9b00;
+    padding: 10px;
+
 }
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     column-gap: 3px;
+    row-gap: 3px;
+    padding-top: 10px;
 }
 .grid-item {
     display: flex;
     height: 150px;
     justify-content: center;
     align-items: center;
+    background-color: #e9d8a6;
+    border-radius: 5px;
+}
+.grid-container a {
+    text-decoration: none;
+    color: #9b2226;
+    height: 150px;
+   
+}
+.grid-container a:hover {
+    color: yellowgreen;
+    cursor: pointer; 
+    box-shadow: 5px 5px 10px teal;
+
+}
+.grid-container a:active {
+    
+    color: aquamarine;
+    cursor: auto;
+    box-shadow: -5px -5px 10px whitesmoke;
+}
+footer a img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+form textarea, input {
+    background-color: #94d2bd;
+    border-radius: 5px;
+    margin: 5px;
+    border: 1px solid whitesmoke;
+    width: 33%;
+}
+form button {
+    color: whitesmoke;
+    width: 33.33%;
+    background-color: #9b2226;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+}
+form button:hover {
+    color: yellowgreen;
+    cursor: pointer; 
+    box-shadow: 3px 3px 5px teal;
+}
+form button:active {
+    color: #e9d8a6;
+    cursor: auto;
+    box-shadow: -1px -1px 5px whitesmoke;
+}
+em {
+    font-weight: bold;
+}
+footer div {
+    color: black;
+    padding-top: 20px;
 }
